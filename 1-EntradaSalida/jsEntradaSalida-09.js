@@ -6,5 +6,16 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-	alert("ok");
+let importe;
+let aumentado;
+let resultado;
+
+importe = parseInt(document.getElementById("txtIdSueldo").value);
+
+aumentado = importe * 10 / 100;
+
+resultado = importe + aumentado;
+
+document.getElementById("txtIdResultado").value=resultado;
+
 }
